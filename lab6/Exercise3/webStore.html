@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Store</title>
+    <center>
+        <h1>
+            Welcome To SoccerKit Shop
+        </h1>
+        <h2>
+            
+        </h2>
+    </center>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <form id="store" action="webStore.php" method="post" onsubmit="return validate()">
+        <div class="Kits">
+            <image
+                src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/0cb077959b7f42afa674ae3500feb499_9366/Real_Madrid_22-23_Home_Jersey_White_HA2654_01_laydown.jpg">
+            </image>
+            <figcaption> <label> 2022 Real Madrid home kit: $150</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="kit1" id="kit1" min="0" size="1" required></p>
+        </div>
+
+        <div class="Kits">
+            <image
+                src="https://www.tradeinn.com/f/13812/138125933/nike-paris-saint-germain-21-22-strike-away-dri-fit-short-sleeve-t-shirt.jpg">
+            </image>
+            <figcaption> <label> 2022 PSG away kit : $100</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="kit2" id="kit2" min="0" size="1" required></p>
+        </div>
+
+        <div class="Kits">
+            <image
+                src="https://www.tradeinn.com/f/13900/139003386/puma-manchester-city-fc-22-23-short-sleeve-t-shirt-home.jpg">
+            </image>
+            <figcaption> <label> 2014 Man City home kit: $120</label><br> </figcaption>
+            <p>Quantity: <input type="number" name="kit3" id="kit3" min="0" size="1" required></p>
+        </div>
+
+        <div class="shipping">
+            <h3>Shipping Options:</h3>
+            <input name="choice" type="radio" value="7days" id="7days"> Free 7 day
+            <input name="choice" type="radio" value="overnight" id="overnight"> $50.00 over night
+            <input name="choice" type="radio" value="3days" id="3days"> $5.00 three day
+        </div>
+
+        <div class="customer">
+            <h3>Login</h3>
+            <label>Username:</label>
+            <input type="email" class="onlineid" name="onlineid" id="onlineid" required>
+            <br></br><label>Password:</label>
+            <input type="password" class="passcode" name="passcode" id="passcode" required minlength="1">
+            <br></br>
+            <input type="submit" value="Submit">
+
+        </div>
+
+        <input type="reset" value="Reset">
+    </form>
+
+    <script src="./formChecker.js"></script>
+</body>
+
+</html>
